@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+    <head>
+    <title>  </title>
+    <meta charset="UTF-8">
+
+
+    <style>
+     html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #313638;
+}
+
+        .over {
+            display: flex;
+            border: 2px solid black;
+            height: 100vh;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 1%;
+        }
+        .rad1 {
+            flex-direction: column;
+            border: 1px solid black;
+            width: 25%;
+        }
+        .rad2 {
+            flex-direction: row;
+            border: 1px solid black;
+            width: 35%;
+        }
+        .rad3 {
+            flex-direction: row;
+            border: 1px solid black;
+            width: 15%;
+        }
+        .rad4 {
+            flex-direction: row;
+            border: 1px solid black;
+            width: 15%;
+        }
+        .rad5 {
+            flex-direction: row;
+            border: 1px solid black;
+            width: 10%;
+        }
+
+        ul {
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            border: 0.5px solid black;
+            text-align: start;
+            font-weight:400;
+            padding: 1px;
+            text-align: center;
+        }
+    
+        header {
+    width: 100%;
+
+    font-size: x-large;
+    position: relative;
+    top: 0;
+    z-index: 999;
+    display: flex;
+}
+header .nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: calc(100% - 141px); /* Kalkulerer 100% minus bredden på logg inn knappen */
+    margin: 0;
+    align-items: center;
+}
+/* Styler navbar <a> elementene */
+header .nav a {
+    font: 700 18px/1.3 DinPro,Arial,sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    border-right: 1px solid #393439;
+    border-bottom: 4px solid transparent;
+
+}
+header .nav a:hover, 
+header a.right:hover {
+  color: gray;
+  transition: .45s ease;
+}
+header .nav a.active, 
+header a.right.active {
+    border-bottom: 4px solid white;
+}
+header a.active2 {
+    color: black;
+}
+header a.right {
+    border-right: 1px solid #393439;
+    border-left: 1px solid #393439;
+    float: right;
+    font: 700 18px/1.3 DinPro,Arial,sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    min-width: 141px;
+    border-bottom: 4px solid transparent;
+}
+
+/* For å plasere dropdown innholdet */
+.dropdown {
+    position: relative;
+    display: flex;
+  }
+  /* Gjør at innholdet er sjult */
+  .dropdown-innhold {
+    display: none;
+    position: absolute;
+    background-color: #1e191e;
+    z-index: 1;
+    margin-top: 77px;
+    width: calc(100% - 1px);
+  }
+  .dropdown-innhold a {
+    color: black;
+    border-top: 1px solid #393439;
+    padding: 25px;
+    min-width: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid transparent;
+  }
+  /* Viser innholdet når man hover over det*/
+.dropdown:hover .dropdown-innhold {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* Gjør MMA skriften helt til venstre se ut som en logo */
+header .logo {
+    border: 1px solid transparent;
+    color: black;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-decoration: none;
+    display: flex; /* Bare for å kunne bruke koden align-items som setter den i midten på Y linjen */
+    align-items: center;
+    }
+    .bilde img{
+        width: 70%;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href='index.html' class="logo">Nøsted</a>
+        <div class="nav">
+        <a href='index.html'>Hjem</a>
+        <a href="index.html">Skjema</a>
+        <a href="ordrer.html">Ordrer</a>
+
+        </div>
+        <a class="right" href='logg-inn.php'>Logg inn</a>
+        </header>
+
+<div class="over">
+
+<div class="rad1">Info <br> <p style="font-weight: normal;">Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla </p></div>
+<div class="rad2">Bilder<br><div class="bilde">
+    <img src="bilder/vinsj.jpg">
+    <img src="bilder/vinsj-finito-300x225.jpg">
+</div>
+</div>
+<div class="rad3">
+    
+</div>
+<div class="rad4">Tlf<ul>
+    <li>12039321</li>
+    <li>09391000</li>
+    <li>12894124</li>
+    <li>98734632</li>
+    </ul>
+</div>
+<div class="rad5">Adresse<ul>
+    <li>Blokkveien 12</li>
+    <li>Holmlia 15</li>
+    <li>Brekka 9</li>
+    <li>Skogen 1</li>
+    </ul>
+</div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
