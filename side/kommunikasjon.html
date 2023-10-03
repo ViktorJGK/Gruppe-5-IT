@@ -3,18 +3,20 @@
 <head>
     <title> </title>
     <style>
-        html, body{
+        html, body {
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-
         }
+
+        /*Nav bar*/
         header {
             background: #536587;
             backdrop-filter: blur(4px);
             display: flex;
             border-right: 4px solid #393439;
         }
+
             header .logo {
                 border: 1px solid transparent;
                 color: black;
@@ -26,27 +28,30 @@
                 text-decoration: none;
                 display: flex; /* Bare for å kunne bruke koden align-items som setter den i midten på Y linjen */
                 align-items: center;
-                padding-right:20px;
+                padding-right: 20px;
                 border-right: 4px solid #393439;
                 white-space: nowrap
             }
-        header .nav {
-            display: flex;
-            flex-direction: row;
-            margin: 0 auto;
-            width: calc(100% - 141px); /* Kalkulerer 100% minus bredden på logg inn knappen */
-            margin: 0;
-            align-items: center;
-        }
-            header .nav a {
-                font: 700 18px/1.3 DinPro,Arial,sans-serif;
-                color: black;
-                text-transform: uppercase;
-                text-decoration: none;
-                padding: 25px;
-                border-right: 4px solid #393439;
-                border-bottom: 4px solid transparent;
+
+            header .nav {
+                display: flex;
+                flex-direction: row;
+                margin: 0 auto;
+                width: calc(100% - 141px); /* Kalkulerer 100% minus bredden på logg inn knappen */
+                margin: 0;
+                align-items: center;
             }
+
+                header .nav a {
+                    font: 700 18px/1.3 DinPro,Arial,sans-serif;
+                    color: black;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 25px;
+                    border-right: 4px solid #393439;
+                    border-bottom: 4px solid transparent;
+                }
+
             header a.right {
                 border-right: 1px solid #393439;
                 border-left: 4px solid #393439;
@@ -61,17 +66,37 @@
                 min-width: 141px;
                 border-bottom: 4px solid transparent;
             }
+
+
+        /*Input box*/
         body .bigbox {
             border-radius: 25px;
             background: #EFEFEF;
             padding: 20px;
-            width: 80%;
-            height: 150px;
+            width: 75%;
+            height: fit-content;
             border: 2px solid;
             margin: auto;
             margin-top: 5%;
         }
 
+        .buttonOutput {
+            background: #536587;
+            width: 5%;
+            height: 100%;
+            float: right;
+            margin-bottom: 20px;
+            margin-right:20px;
+        }
+
+        .temaSize {
+            width: 90%;
+            height: 50px;
+        }
+
+        .emailBox {
+            width: 20%;
+        }
     </style>
 </head>
 <body>
@@ -89,18 +114,28 @@
     <!-- interaksjons box for sending av melding-->
     <div>
         <div class="bigbox">
-            <div>Send til:</div>
-            <form>
-                <input type="email" />
+            <u style="font-size:30px;">Send til:</u>
+            <form style="margin-top: 5px;">
+                <input type="email" class="emailBox" />
             </form>
-            <div>cyke blyat</div>
-            <form>
-                <input type="button" />
+            <br />
+            <br />
+            <u style="font-size:30px;">Tema</u>
+            <form style="margin-top: 5px;">
+                <textarea type="text" class="temaSize"></textarea>
+
+               
             </form>
+            <br />
+            <br />
+            <form>
+                <input type="submit" class ="buttonOutput" value="Send" />
+            </form>
+            <br />
+
         </div>
 
 
     </div>
 </body>
-
 </html>
