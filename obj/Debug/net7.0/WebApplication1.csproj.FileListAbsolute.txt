@@ -28,3 +28,5 @@ C:\Users\thoma\source\repos\WebApplication1\WebApplication1\obj\Debug\net7.0\ref
 C:\Users\thoma\source\repos\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.pdb
 C:\Users\thoma\source\repos\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.genruntimeconfig.cache
 C:\Users\thoma\source\repos\WebApplication1\WebApplication1\obj\Debug\net7.0\ref\WebApplication1.dll
+C:\Users\Viktor\Uni\Prog\Gruppe-5-IT\obj\Debug\net7.0\WebApplication1.dll
+C:\Users\Viktor\Uni\Prog\Gruppe-5-IT\obj\Debug\net7.0\WebApplication1.pdb
